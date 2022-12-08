@@ -1,0 +1,70 @@
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height:100vh;
+  background:cyan;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.loginWindow{
+  height: 600px;
+  max-width: 500px;
+  background: white;
+  padding:0 20px;
+  border: 1px solid black;
+  position: relative;
+}
+.logo{
+  position: relative;
+  left:80px;
+
+}
+h3{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.links{
+  display: flex;
+  justify-content:center;
+  gap:15px;
+  margin-bottom: 10px;
+}
+.links a{
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+.links div{
+  width:200px;
+  height:50px;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.facebook{
+  background: hsl(240, 100%, 61%)
+}
+.google{
+  background:hsl(0, 93%, 60%);
+}
+.login{
+  width:420px;
+  height:130px;
+  overflow: hidden;
+}
+.login input{
+  margin-bottom: 10px;
+}
+.upper{
+  width:420px;
+  height:30px;
+  border-radius:5px;
+  border:2px solid hsl(0, 0%, 80%)
+}
