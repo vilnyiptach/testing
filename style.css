@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body{
   min-height:100vh;
   background:cyan;
@@ -19,27 +20,31 @@ body{
   border: 1px solid black;
   position: relative;
 }
+
 .logo{
   position: relative;
   left:80px;
-
 }
+
 h3{
   display:flex;
   justify-content: center;
   margin-bottom: 20px;
 }
+
 .links{
   display: flex;
   justify-content:center;
   gap:15px;
   margin-bottom: 10px;
 }
+
 .links a{
   text-decoration: none;
   font-weight: 700;
   color: white;
 }
+
 .links div{
   width:200px;
   height:50px;
@@ -48,23 +53,52 @@ h3{
   align-items:center;
   justify-content:center;
 }
+
 .facebook{
   background: hsl(240, 100%, 61%)
 }
+
 .google{
   background:hsl(0, 93%, 60%);
 }
+
 .login{
   width:420px;
   height:130px;
   overflow: hidden;
 }
-.login input{
+
+/* .login input{
   margin-bottom: 10px;
+} */
+
+.login input:hover{
+  border:2px solid hsl(212, 100%, 73%)
 }
+
+.login input:focus{
+  outline: none !important; 
+  border: 2px solid hsl(209, 100%, 48%);
+  padding-left:5px;
+}
+
+.login input:focus::placeholder{
+  color: transparent;
+}
+
 .upper{
   width:420px;
   height:30px;
   border-radius:5px;
   border:2px solid hsl(0, 0%, 80%)
+}
+
+.forgetpassword{
+  position: relative;
+  left:300px;
+  top:17px;
+}
+
+.forgetpassword a{
+  text-decoration: none;
 }

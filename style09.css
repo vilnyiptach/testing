@@ -1,0 +1,26 @@
+table{
+  border: 1px solid black;
+}
+td{
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+tr{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap:2px;
+  margin-bottom: 2px;
+}
+.l{
+  margin-bottom: 0;
+}
+td:hover{
+  background:red;
+
+}
+td:active{
+  background:blue
+}
