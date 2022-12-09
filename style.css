@@ -37,6 +37,7 @@ h3{
   justify-content:center;
   gap:15px;
   margin-bottom: 10px;
+  user-select: none;
 }
 
 .links a{
@@ -44,7 +45,12 @@ h3{
   font-weight: 700;
   color: white;
 }
-
+.facebook:active{
+  background:rgb(45, 0, 248)
+}
+.google:active{
+  background:red
+}
 .links div{
   width:200px;
   height:50px;
@@ -101,4 +107,50 @@ h3{
 
 .forgetpassword a{
   text-decoration: none;
+}
+
+.rememberMe{
+  display: flex;
+  gap:10px;
+  justify-content: center;
+}
+
+.rememberMe input{
+  filter: hue-rotate(30deg);
+  width: 20px;
+  height:20px
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  margin:10px 0;
+  background:hsl(212, 100%, 73%);
+  border-radius: 5px;
+  height: 33px;
+  margin-bottom: 30px;
+  user-select: none !important;
+}
+
+.submit button{
+  border: none;
+  background-color: hsl(212, 100%, 73%);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.submit:active{
+  background:blue;
+}
+.submit:active button{
+  background:blue;
+}
+.footer{
+  border-top:2px solid hsl(0, 0%, 80%);
+  padding-top:30px;
+  height:100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center ;
 }
